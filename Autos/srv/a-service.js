@@ -1,7 +1,7 @@
-const cds = require("@sap/cds");
+const cds = require('@sap/cds');
 const { Marca} = cds.entities;
 
-module.export = cds.service.impl(async (srv) => {
+module.exports = cds.service.impl(async (srv) => {
 
     srv.on('insertMarca', async req => {
         try {
@@ -9,7 +9,7 @@ module.export = cds.service.impl(async (srv) => {
             const {marca} = req.data;
 
             if(await cds.run(INSERT.into(Marca).entries(marca))){
-                return "Todo ha salido bien";
+                return "Todo ha salido bien"; 
             }
         } catch (error) {
             return "Hubo un error a la hora de la insercion";
