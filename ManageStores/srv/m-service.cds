@@ -4,7 +4,6 @@ service api {
     entity Store as select from my.Store{*};
 
     @readonly entity Test as select from my.Store {
-        *,
         name as nombreTienda,
         product.product.name as nombreProduct,
         product.product.price.value as precioProducto,
