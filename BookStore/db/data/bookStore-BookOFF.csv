@@ -1,0 +1,4 @@
+ID;name;publicationDate;score;critics;editorial_ID;author_ID
+"351340d3-1ff4-483f-bd99-3c8eac778883";"The yellow cadaver";16/03/21";5;["critica 1","critica 2"];"80f40cda-8b93-4a97-a8a1-f33048c88cb6";"df493a0a-f079-47c0-93a1-6837e8b841af"
+"3a7ff04b-c32c-4558-b336-8f5ad0246798";"Game of Poseidon";"16/03/21";3;["critica 1"];"c7bb1be8-b7b8-4deb-b544-558d0b53d7d6";"6526612f-d64c-46cc-9199-68d4e9fefcc9"
+"669a099d-2466-46fa-90a0-3a3a0d52b0ac";"Blade of Serpent";"16/03/21";4;["critica 1"];"80f40cda-8b93-4a97-a8a1-f33048c88cb6";"711b408a-aa87-4430-920b-22b039699f9d"

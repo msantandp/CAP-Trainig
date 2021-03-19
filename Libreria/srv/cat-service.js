@@ -1,7 +1,7 @@
 const cds = require("@sap/cds");
 const { Stock } = cds.entities;
 
-module.export = cds.service.impl(async (srv) => {
+module.exports = cds.service.impl(async (srv) => {
 
     srv.on('modInv', async req => {
         try {

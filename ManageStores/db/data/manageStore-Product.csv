@@ -1,6 +1,6 @@
-ID;name;price_ID
-"93e0891a-efad-42ea-83af-afb664eef4e1";"Product 1";"4dc18760-55a8-48d9-b5e9-6c2d1ba41912"
-"cc2aa806-15bb-423b-be0f-1a4329be619c";"Product 2";"cc63a988-b0bf-4c0a-b45b-511294437054"
-"b54d6d91-0f04-47fa-afc6-0bb4090ba3d5";"Product 3";"e24c2dc2-dd86-46e0-9dd7-9482332d92ec"
-"bda3b6eb-ff00-4f6c-8df4-a1639c7ea73f";"Product 4";"4dc18760-55a8-48d9-b5e9-6c2d1ba41912"
-"6d6cd408-3c21-40da-9946-4f1d64d17085";"Product 5";"cc63a988-b0bf-4c0a-b45b-511294437054"
+ID;name;price_ID;brand_ID;subtype_ID;stock
+"93e0891a-efad-42ea-83af-afb664eef4e1";"Product 1";"27f959ab-4cdf-4a69-bcbe-82de5207a711";"70597da2-44b6-4829-8a1b-e42a4d4ab550";"4fb77b39-2241-4316-b5f6-1767c74e6dbf";100
+"cc2aa806-15bb-423b-be0f-1a4329be619c";"Product 2";"cc63a988-b0bf-4c0a-b45b-511294437054";"71a0df4c-434b-4a5d-a49f-e4173f1af2bb";"5a1c20c2-5eb6-4df2-b3ef-40822eff1449";100
+"b54d6d91-0f04-47fa-afc6-0bb4090ba3d5";"Product 3";"e24c2dc2-dd86-46e0-9dd7-9482332d92ec";"a08dcf96-a480-4607-944f-4eac6cc2d5be";"966af541-a902-4f20-a3a4-7cfb891bada1";100
+"bda3b6eb-ff00-4f6c-8df4-a1639c7ea73f";"Product 4";"4dc18760-55a8-48d9-b5e9-6c2d1ba41912";"70597da2-44b6-4829-8a1b-e42a4d4ab550";"dce579d4-dd37-4cf5-aef4-769866b9679a";100
+"6d6cd408-3c21-40da-9946-4f1d64d17085";"Product 5";"cc63a988-b0bf-4c0a-b45b-511294437054";"71a0df4c-434b-4a5d-a49f-e4173f1af2bb";"f0e653ad-0ecd-4297-b797-a82ffd092cff";100

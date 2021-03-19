@@ -1,0 +1,6 @@
+ID;sender;content;read;multimedia;user_ID
+8e184c00-5577-49d6-8090-b2a35713a013;username3;Message from username3 to username1;true;[{"typeM": "Foto", "size": 12.3}];25502e9f-8776-4422-8401-47a52763f6b7
+2232ec2a-b643-4bc7-930c-d4893d884565;username1;Message from username1 to username3;true;[];65f53058-118c-43b8-9c25-db1fe3ac82ce
+fb2ec75e-a93b-4f75-aa79-107506c7e006;username2;Message from username2 to username1;true;[{"typeM": "Video", "size": 50.7}];25502e9f-8776-4422-8401-47a52763f6b7
+8e8e8b5d-ee49-4117-bd62-528eefa4522f;username2;Message from username2 to username3;true;[];65f53058-118c-43b8-9c25-db1fe3ac82ce
+01fbe658-d500-4d9f-bbaa-2602eaa472d5;username3;Message from username3 to username2;true;[];8c5b7830-bef4-4dd8-b19f-ce756ef11b03

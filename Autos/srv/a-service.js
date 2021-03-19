@@ -7,7 +7,7 @@ module.exports = cds.service.impl(async (srv) => {
         try {
             console.log("Entando a insertar Marca");
             const {marca} = req.data;
-
+            console.log(req.data);
             if(await cds.run(INSERT.into(Marca).entries(marca))){
                 return "Todo ha salido bien"; 
             }

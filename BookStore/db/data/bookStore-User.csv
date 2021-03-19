@@ -1,0 +1,5 @@
+ID;client_ID;username;password;email;points;condition
+"afcd15f9-852e-4446-8bbb-773223649392";"01b2a26a-8509-478f-867d-440ed8e659e7";"nicoUser";"123123";["nico@email.com","nico2@email.com"];1000;1
+"5291a9a1-ddcf-4b7f-a8fd-25a0cb83c434";"0faff9e4-b1a7-4fba-8803-8cffcb06d253";"javiUser";"456456";["javi@email.com"];777;1
+"b4a6432b-9020-4dfb-a642-85ceacc6b3b1";"52f2ba71-3b76-4fdf-9389-2c6c9df8a389";"andresUser";"84568456";["andres@email.com"];0;2
+"29d7e068-538e-4347-b814-c1613a291216";"52f2ba71-3b76-4fdf-9389-2c6c9df8a389";"andresNewUser";"84568456";["andres@email.com"];500;1

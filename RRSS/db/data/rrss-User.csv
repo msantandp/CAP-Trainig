@@ -1,0 +1,4 @@
+ID;username;password;friends;status;name;lastname;country;gender;phone;birthDate;email
+25502e9f-8776-4422-8401-47a52763f6b7;username1;userpass1;7;true;humanName1;humanLastName1;CHL;1;123456789;2021-03-16;[{"user": "user1email1", "domain": "@email.com", "full": "user1email1@email.com"}]
+8c5b7830-bef4-4dd8-b19f-ce756ef11b03;username2;userpass2;300;true;humanName2;humanLastName2;ARG;2;987654321;2021-03-17;[{"user": "user2email1", "domain": "@email.com", "full": "user2email1@email.com"},{"user": "user2email2", "domain": "@email.com", "full": "user2email2@email.com"}]
+65f53058-118c-43b8-9c25-db1fe3ac82ce;username3;userpass3;100;true;humanName3;humanLastName3;ESP;3;987321654;2021-03-16;[{"user": "user3email1", "domain": "@email.com", "full": "user3email1@email.com"}]

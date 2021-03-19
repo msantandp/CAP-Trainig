@@ -1,4 +1,4 @@
-using { cuid, Currency } from '@sap/cds/common';
+using { cuid } from '@sap/cds/common';
 namespace manageStore;
 
 entity Store : cuid {
@@ -9,8 +9,12 @@ entity Store : cuid {
 
 entity Product : cuid {
     name: String(20);
+    stock: Integer;
     store: Association to many Store_Product on store.product = $self;
     price: Association to Price;
+    brand: Association to Brand;
+    //Test
+    subtype: Association to SubType;
 }
 
 entity Owner : cuid {
@@ -33,3 +37,18 @@ entity Store_Product {
     key product: Association to Product;
 }
 
+entity Brand : cuid {
+    name: String(20);
+    product: Association to many Product on product.brand = $self;
+}
+
+entity eType: cuid {
+    name: String(20);
+    asubtype: Composition of many SubType on asubtype.type = $self
+}
+
+entity SubType : cuid {
+    type: Association to eType;
+    name: String(20);
+   
+}
