@@ -16,11 +16,12 @@ module.exports = cds.service.impl(async (srv) => {
                 console.log("Stock actualizado");
 
                 console.log("Verificar max min");
-                const stock = await cds.run(SELECT.from(Product).where({ ID: product }))
+                const query = await cds.run(SELECT.from(Product).where({ ID: product }))
+                const { min, max, stock } = query[0]
 
-                if(stock[0].stock < 30) {
+                if(stock < min) {
                     console.log("Stock demasiado bajo");
-                } else if (stock[0].stock > 300) {
+                } else if (stock > max) {
                     console.log("Stock demasiado alto");
                 } else {
                     console.log("Todo ok!");
@@ -33,36 +34,54 @@ module.exports = cds.service.impl(async (srv) => {
         }
     })
 
-
-    //arreglar solo un INSERT
     srv.after('CREATE', 'Owner', async (data, req) => {
         try {
-            console.log("stores: ");
+            const { ID } = data
+            console.log("Agregando tiendas a Owners");
             const { stores } = req._.req.query
-
             if (stores) {
-                let arrayStores = []
+                console.log("Entrando al if");
+
                 arrayStores = stores.split(',')
+
+                arrayData = []
+                
                 for(let i in arrayStores){
-                    await INSERT.into(Owner_Store).columns(['owner_ID','store_ID']).values([req.data.ID,arrayStores[i]])
-                }
+                    arrayData.push({
+                        owner_ID: ID,
+                        store_ID: arrayStores[i]
+                    }) 
+                };
+
+                
+                await INSERT.into(Owner_Store).entries(arrayData)
+                
             }
         } catch (error) {
             console.log(error);
         }
     })
 
+
     srv.on('updatePrice', async req => {
         try {
             console.log("Entrando a updatePrice");
-            console.log(req.data);
             const { products } = req.data;
-            for(let i in products){
-                await cds.run(UPDATE(Product).set({ price_ID: products[i].price_ID }).where({ ID: products[i].ID}))
+            if (products) {
+                for(let i in products){
+                    await cds.run(UPDATE(Product).set({ price_ID: products[i].price_ID }).where({ ID: products[i].ID}))
+                }
+                console.log("Precios updateados!");
+                return "Precios updateados!"
+            } else {
+                console.log("JSON vacio");
+                return "JSON vacio"
             }
+            
             
         } catch (error) {
             console.log(error);
+            return error
         }
     })
 

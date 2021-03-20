@@ -10,6 +10,8 @@ entity Store : cuid {
 entity Product : cuid {
     name: String(20);
     stock: Integer;
+    min: Integer;
+    max: Integer;
     store: Association to many Store_Product on store.product = $self;
     price: Association to Price;
     brand: Association to Brand;
