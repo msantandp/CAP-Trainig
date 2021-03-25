@@ -1,5 +1,5 @@
 {
-  "name": "BookStore",
+  "name": "TestNorthWind",
   "version": "1.0.0",
   "description": "A simple CAP project.",
   "repository": "<Add your repository here>",
@@ -13,21 +13,14 @@
     "sqlite3": "^5.0.2"
   },
   "scripts": {
-    "start": "cds run",
-    "deploy": "cds build/all --clean && mbt assemble && cf deploy ./\/mta_archives/\/cap_curso_1.0.0.mtar"
+    "start": "cds run"
   },
   "cds": {
     "requires": {
-      "db": {
-        "kind": "hana",
-        "model": [
-          "db",
-          "srv"
-        ]
+      "NorthWind": {
+        "kind": "odata",
+        "model": "srv\\external\\NorthWind"
       }
-    },
-    "odata": {
-      "version": "v4"
     }
   }
 }

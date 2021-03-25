@@ -7,6 +7,7 @@ module.exports = cds.service.impl(async (srv) => {
             console.log("Entrando a alterStock");
 
             const { product, amount } = req.data
+            
             //verify product
             const vProduct = await cds.run(SELECT.from(Product).where({ ID: product }))
 

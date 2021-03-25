@@ -7,12 +7,28 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^4",
-    "express": "^4"
+    "express": "^4",
+    "@sap/hana-client": "^2.6.61"
   },
   "devDependencies": {
     "sqlite3": "^5.0.2"
   },
   "scripts": {
-    "start": "cds run"
+    "start": "cds run",
+    "deploy": "cds build/all --clean && mbt assemble && cf deploy ./\/mta_archives/\/cap_curso_1.0.0.mtar"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "hana",
+        "model": [
+          "db",
+          "srv"
+        ]
+      }
+    },
+    "odata": {
+      "version": "v4"
+    }
   }
 }
