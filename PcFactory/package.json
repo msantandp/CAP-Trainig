@@ -20,6 +20,21 @@
   },
   "cds": {
     "requires": {
+      "auth": {
+        "strategy": "mock",
+        "users": {
+          "msantandp@gmail.com": { 
+            "password": "123", 
+            "roles": ["Scope1","Scope2","test"],
+            "userAttributes": { }
+          },
+          "javier.castrob@sansano.usm.cl": { 
+            "password": "123", 
+            "roles": ["Scope2"],
+            "userAttributes": { }
+          }
+        }
+      },
       "db": {
         "kind": "hana",
         "model": [
